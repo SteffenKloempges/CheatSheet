@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+body{
+    margin: 0;
+    background: #000;
+    font-family: 'Roboto', sans-serif;
+}
+/* ====Styling Header==== */
+header{
+    height: 50px;
+    border-bottom: 1.5px solid #fff;
+}
+header ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header ul li{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+ header ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 3px;
+    font-size: 36px;
+    color: #fff;
+    z-index: 1;
+}
+header ul li a:hover{
+    text-decoration: underline;
+    color: aquamarine;
+}
+/* ====Styling Main==== */
+main{
+    margin: 0;
+    height: 84vh;
+}
+main h1{
+    color: #fff;
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    margin-left: 20px;
+    font-family: 'Space Mono', monospace;
+}
+main ul{
+    list-style: none;
+    color: #fff;
+    display: inline-block;
+}
+main ul:first-child{
+    margin-right: 50px;
+}
+main ul li{
+    font-size: 20px;
+}
+main ul li:hover+img{
+    width: 800px;
+}   
+main ul li::before{
+    content: "\2022";
+    color: aquamarine;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+} 
+main img{
+    height: 300px;
+    width: 0px;
+    position: fixed;
+    top: 300px;
+    right: 400px;
+    transition: width 1s;
+}
+/* ====Styling Footer==== */
+footer{
+    color:#fff;
+    border-top: 1.5px solid #fff;
+    text-align: center;
+}
+footer p span{
+    color:aquamarine;
+}
